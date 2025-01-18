@@ -1,0 +1,32 @@
+Simulate Game of Life 
+
+Conway's Game of Life is a captivating simulation that shows how complex, lifelike behavior can emerge from a simple set of rules. Created in 1970 by mathematician John Conway, this "game" reveals surprising patterns that evolve over time - cells organize, oscillate, replicate, and even move across the grind in ways that feel almost alive. 
+
+Through this assignment, youll experience the beauty of these interactions firsthand, as a 30x30 grid of cells transforms into dynamic patterns, uncovering hidden stnictures and unexpected behaviors in each generation.
+
+Your task is to simulate Conway's Game of Life, which operates on a grid of cells that can be either alive or deed. The grid evolves over generations based on specific rules. 
+
+For this assignment, follow the instructions and requirements below to complete the simulation. 
+
+Instructions and Requirements: 
+I. Grid Initialization: 
+    o Define a 2D array of constant size 30x30 to represent the grid for the Game of Life. 
+    o Load data for this grid from a text file. The file will contain a 30x30 matrix of 1s and Os. where 1 represents a live cell and 0 represents a dead cell. 
+    o File Input: Prompt the user to enter the file name. storing the file name in a character array (not a string object). File name wil be no longer than 20 characters including ...txt". 
+    
+II. Game Rules: Implement the following rules to determine the state of each cell in the next generation: 
+        o A live cell with fewer than two live neighbors dies (underpopulation). 
+        o A live cell with two or three live neighbors survives. 
+        o A live cell with mom than three live neighbors dies (overpopulation). 
+        o A live cell with exactly three live neighbors. becomes alive (restoration). 
+        
+III. Simulation Steps
+        o Prompt the user to input number of generations to simulate. 
+        o For each generation:
+            o Display the current grid with the generation number and the population count (total number of live cells). 
+            o Apply the Game of Life rules to determine the state of the next generation.
+            o Use system("clear") to clear the console after each generation.  
+            o Use usleep() from <unistd.h> to add a small delay to simulate animation. 
+            
+IV. File Output: 
+    o After each generation, save the updated grid to the same file from which it was loaded. overwriting previous data.
